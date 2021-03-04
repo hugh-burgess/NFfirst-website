@@ -5,8 +5,7 @@
     <meta name="website" content="NF website Hugh" />
     <title>My First NF Website</title>
 
-    <!-- <link href="./style.css" rel="stylesheet" />
-    -->
+    <link href="./style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -14,9 +13,22 @@
       <h1>Hugh Burgess</h1>
       <nav>
         <ul>
-          <a href="#Home"><li>Home</li></a>
-          <a href="#Contact"><li>Contact</li></a>
-          <a href="#Career"><li>Career</li></a>
+          <li>
+            <a href="#Home">Home 🏡</a>
+          </li>
+          <li>
+            <a href="#Work">Work 🗄</a>
+          </li>
+          <li>
+            <a href="#AboutMe">About Me 🤖</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact 📞</a>
+          </li>
+
+          <li>
+            <a href="#CV">CV 📨</a>
+          </li>
         </ul>
       </nav>
 
@@ -24,39 +36,67 @@
 
       <img src="/images/profile-picture.png" alt="Picture of Hugh" />
     </header>
-    <section>
-      <h2 id="Career">About Me</h2>
-      <article>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, saepe
-          aperiam alias vitae quod autem iusto untur itaque in vel quidem dicta
-          temporibus cupiditate voluptatum numquam velit perferendis maiores
-          animi!
-        </p>
-      </article>
-    </section>
 
-    <section>
-      <div class="contact_box">
-        <p>Mobile: 07234823492342213434</p>
-        <p>Email: <a href="">hello@me.com</a></p>
-      </div>
-    </section>
-
-    <article class="links" id="Contact">
-      <h1>Contact</h1>
+    <article class="links" id="Work">
+      <h1>Work</h1>
       <hr />
 
-      <img src="./images/github.png" alt="Photo of GitHub Logo" />
-      <a class="hyperlink_text" href="https://github.com/">GitHub</a>
+      <a href="https://github.com/hugh-burgess"
+        ><img
+          class="github"
+          src="./images/github.png"
+          alt="Photo of GitHub Logo"
+      /></a>
+      <a class="hyperlink_text" href="https://github.com/hugh-burgess"
+        >GitHub</a
+      >
       <hr />
-      <img src="./images/codepen.png" alt="Photo of CodePen" />
-      <a class="hyperlink_text" href="https://codepen.com/">CodePen</a>
+      <a href="https://codepen.io/hugh-burgess"
+        ><img class="codepen" src="./images/codepen.png" alt="Photo of CodePen"
+      /></a>
+      <a class="hyperlink_text" href="https://codepen.io/hugh-burgess"
+        >CodePen</a
+      >
       <hr />
-      <img src="./images/linkedin.png" alt="Photo of LinkedIn" />
-      <a class="hyperlink_text" href="https://linkedin.com/">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/hugh-burgess"
+        ><img
+          class="linkedin"
+          src="./images/linkedin.png"
+          alt="Photo of LinkedIn"
+      /></a>
+      <a class="hyperlink_text" href="https://www.linkedin.com/in/hugh-burgess"
+        >LinkedIn</a
+      >
       <hr />
     </article>
+
+    <article>
+      <h2 id="AboutMe">About Me</h2>
+
+      <p>
+        Hello! Welcome to my page, I'm Hugh, 28, with a passion for learning new
+        things and I have been teaching myself how to code since August 2020.
+        After watching Mr. Robot, and I was hooked!
+        <br />
+        <br />
+        I heard about Neue Fische through a friend and I'm so happy to have
+        joined, the teachers are great and it feels like I'm part of a
+        meaningful team.
+      </p>
+    </article>
+
+    <article class="contact_box links" id="Contact">
+      <h3>Get in touch!</h3>
+
+      <p>Mobile: +49 151 6777 3199</p>
+      <p>
+        Email:
+        <a href="mailto:hughburgessgermany@hotmail.com"
+          >hughburgessgermany@hotmail.com</a
+        >
+      </p>
+    </article>
+
     <article>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, saepe
@@ -69,7 +109,7 @@
     <br />
 
     <article>
-      <h3>CV</h3>
+      <h3 id="CV">CV</h3>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, saepe
         aperiam alias vitae quod autem iusto untur itaque in vel quidem dicta
@@ -77,7 +117,9 @@
         animi!
       </p>
     </article>
+
     <hr />
+
     <footer>
       <a href="#Home">Back to Top</a>
       &copy; 2021 Hugh Burgess

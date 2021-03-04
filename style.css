@@ -24,7 +24,8 @@ p {
 
 ul {
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
 }
 
 header {
@@ -47,4 +48,16 @@ header {
 
 .links {
   text-align: center;
+}
+
+.github {
+  cursor: pointer;
+}
+
+.codepen {
+  cursor: pointer;
+}
+
+.linkedin {
+  cursor: pointer;
 }
