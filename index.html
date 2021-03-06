@@ -1,127 +1,142 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="website" content="NF website Hugh" />
-    <title>My First NF Website</title>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <!--Main Meta-->
 
-    <link href="./style.css" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Document</title>
+        <!--Links to Stylesheets-->
+        <link href="./style.css" rel="stylesheet" />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          media="only screen and (max-device-width: 480px)"
+          href="./small-device.css"
+        />
+
+        <!--Fonts-->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+    </html>
   </head>
 
   <body>
-    <header id="Home">
-      <h1>Hugh Burgess</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#Home">Home 🏡</a>
-          </li>
-          <li>
-            <a href="#Work">Work 🗄</a>
-          </li>
-          <li>
-            <a href="#AboutMe">About Me 🤖</a>
-          </li>
-          <li>
-            <a href="#Contact">Contact 📞</a>
-          </li>
+    <div class="layout-grid">
+      <header id="Home" class="grid-header">
+        <h1>Hugh Burgess</h1>
+        <nav>
+          <ul class="nav-bar">
+            <li>
+              <a href="#Home">🏡</a>
+            </li>
+            <li>
+              <a href="#Work">🗄</a>
+            </li>
+            <li>
+              <a href="#AboutMe">🤖</a>
+            </li>
+            <li>
+              <a href="#Contact">📞</a>
+            </li>
 
-          <li>
-            <a href="#CV">CV 📨</a>
-          </li>
-        </ul>
-      </nav>
-
-      <br />
-
-      <img src="/images/profile-picture.png" alt="Picture of Hugh" />
-    </header>
-
-    <article class="contact_box" id="Work">
-      <h2>Work</h2>
-      <hr />
-
-      <ul class="list_dot">
-        <li>
-          <a href="https://github.com/hugh-burgess">
-            <img src="./images/github.png" alt="Photo of GitHub Logo" />
-          </a>
-
-          <a class="hyperlink_text" href="https://github.com/hugh-burgess"
-            >GitHub
-          </a>
-        </li>
-
-        <hr />
-
-        <li>
-          <a href="https://codepen.io/hugh-burgess">
-            <img src="./images/codepen.png" alt="Photo of CodePen" />
-          </a>
-
-          <a class="hyperlink_text" href="https://codepen.io/hugh-burgess"
-            >CodePen
-          </a>
-        </li>
-
-        <hr />
-
-        <li>
-          <a href="https://www.linkedin.com/in/hugh-burgess">
-            <img src="./images/linkedin.png" alt="Photo of LinkedIn" />
-          </a>
-
-          <a
-            class="hyperlink_text"
-            href="https://www.linkedin.com/in/hugh-burgess"
-            >LinkedIn
-          </a>
-        </li>
-      </ul>
-
-      <hr />
-    </article>
-
-    <article>
-      <h2 id="AboutMe">About Me</h2>
-
-      <p>
-        Hello! Welcome to my page, I'm Hugh, 28, with a passion for learning new
-        things and I have been teaching myself how to code since August 2020.
-        After watching Mr. Robot, and I was hooked!
+            <li>
+              <a href="#CV">📨</a>
+            </li>
+          </ul>
+        </nav>
         <br />
+        <img src="/images/profile-picture.png" alt="Picture of Hugh" />
+      </header>
+      <main class="grid-main">
+        <article class="contact_box" id="Work">
+          <h2>Work</h2>
+
+          <ul class="list_dot fade-box">
+            <li>
+              <a href="https://github.com/hugh-burgess">
+                <img src="./images/github.png" alt="Photo of GitHub Logo" />
+              </a>
+
+              <a class="hyperlink_text" href="https://github.com/hugh-burgess"
+                >GitHub
+              </a>
+            </li>
+
+            <li>
+              <a href="https://codepen.io/hugh-burgess">
+                <img src="./images/codepen.jpeg" alt="Photo of CodePen" />
+              </a>
+
+              <a class="hyperlink_text" href="https://codepen.io/hugh-burgess"
+                >CodePen
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/hugh-burgess">
+                <img src="./images/linkedin.jpeg" alt="Photo of LinkedIn" />
+              </a>
+
+              <a
+                class="hyperlink_text"
+                href="https://www.linkedin.com/in/hugh-burgess"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h2 id="AboutMe">About Me</h2>
+
+          <p class="fade-box">
+            Hello! Welcome to my page, I'm Hugh, 28, with a passion for learning
+            new things and I have been teaching myself how to code since August
+            2020. After watching Mr. Robot, and I was hooked!
+            <br />
+            <br />
+            I heard about Neue Fische through a friend and I'm so happy to have
+            joined, the teachers are great and it feels like I'm part of a
+            meaningful team.
+          </p>
+        </article>
+
+        <article class="fade-box contact_box" id="Contact">
+          <h3>Get in touch!</h3>
+
+          <p>Mobile: +49 151 6777 3199</p>
+          <p>
+            Email:
+            <a href="mailto:hughburgessgermany@hotmail.com"
+              >hughburgessgermany@hotmail.com</a
+            >
+          </p>
+        </article>
         <br />
-        I heard about Neue Fische through a friend and I'm so happy to have
-        joined, the teachers are great and it feels like I'm part of a
-        meaningful team.
-      </p>
-    </article>
 
-    <article class="contact_box" id="Contact">
-      <h3>Get in touch!</h3>
+        <article class="fade-box fade-box-cv">
+          <h3 class="grid-cv">CV</h3>
+          <p class="grid-cv-text">
+            Can't say there's been much to say here in the way of history with
+            coding, I've only just started!
+          </p>
+        </article>
+        <br />
+      </main>
 
-      <p>Mobile: +49 151 6777 3199</p>
-      <p>
-        Email:
-        <a href="mailto:hughburgessgermany@hotmail.com"
-          >hughburgessgermany@hotmail.com</a
-        >
-      </p>
-    </article>
-
-    <article>
-      <h3 id="CV">CV</h3>
-      <p>
-        Cant't say there's been much to say here in the way of history with
-        coding, I've only just started!
-      </p>
-    </article>
-
-    <hr />
-
-    <footer>
-      <a href="#Home">Back to Top</a>
-      &copy; 2021 Hugh Burgess
-    </footer>
+      <footer class="footer fade-box grid-footer">
+        <a href="#Home">Back to Top</a>
+        <p>&copy; 2021 Hugh Burgess</p>
+      </footer>
+    </div>
   </body>
 </html>

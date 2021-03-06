@@ -1,3 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: url(./images/background.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 h1,
 h2 {
   font-weight: 800;
@@ -8,43 +22,141 @@ h2 {
   padding: 5px;
 }
 
-img {
-  border-radius: 5px;
-  width: 100%;
-}
+/*Grid*/
 
-nav {
-  background-color: aquamarine;
-  border-radius: 5px;
-  height: 20px;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-ul {
+.layout-grid {
   display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-columns: 80px auto 80px;
+  grid-template-rows: auto auto auto;
 }
+
+.grid-header {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.grid-main {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.grid-footer {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+/*Header*/
 
 header {
   width: 100%;
 }
+
+nav {
+  border-radius: 5px;
+  height: 8vh;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+}
+
+.nav-bar {
+  margin: auto;
+  height: 35px;
+  width: 100%;
+  align-items: center;
+  padding-left: 0;
+}
+
+.nav-bar > li {
+  display: grid;
+  justify-content: center;
+}
+
+.nav-bar > li {
+  width: 100%;
+  list-style: none;
+}
+
+.nav-bar > li > a {
+  background-color: brown;
+  padding: 10px;
+  border: black 1px solid;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+/*Main*/
 
 .contact_box {
   padding: 5px;
   text-align: center;
 }
 
-.hyperlink_text {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: grey;
+.contact_box > ul > li > a > img {
+  width: 150px;
   padding: 5px;
+}
+
+li {
+  height: auto;
+}
+
+.hyperlink_text {
+  background-color: grey;
+  color: white;
+  text-decoration: none;
+  padding: 1px;
   border-radius: 5px;
 }
 
 .list_dot {
   list-style: none;
+  padding: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.fade-box {
+  background: azure;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.fade-box-cv {
+  display: grid;
+  grid-template-columns: 80px auto 80px;
+  grid-template-rows: 50px 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-cv {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.grid-cv-text {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/*Footer*/
+
+.footer > a {
+  display: inline;
+}
+
+footer > p {
+  padding: 10px;
 }
