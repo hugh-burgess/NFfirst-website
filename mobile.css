@@ -97,17 +97,48 @@ legend {
   color: #000;
 }
 
+/*------------------------*/
+
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 46.875px auto 46.875px;
+  grid-template-rows: auto auto auto;
+}
+
+.grid-header {
+  grid-column: 2 / 3;
+}
+
+/*grid inside header here*/
+.grid-header {
+  display: grid;
+}
+/*----*/
+
+.grid-main {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.grid-footer {
+  grid-column: 2 / 3;
 }
 
 html {
   background: linear-gradient(35deg, #ccffff, #ffcccc);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 body {
+  overflow: hidden;
   font-family: "Roboto", sans-serif;
 }
 
@@ -121,59 +152,35 @@ h2 {
   padding: 5px;
 }
 
-/*Grid*/
-
-.layout-grid {
-  display: grid;
-  grid-template-columns: 80px auto 80px;
-  grid-template-rows: auto auto 50px;
-}
-
-.grid-header {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.grid-main {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-.grid-footer {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-}
-
 /*Header*/
 
-header {
-  width: 100%;
+nav {
+  overflow-y: hidden;
+  display: inline;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+nav > ul > li {
+  overflow: hidden;
+  display: inline;
+}
+
+nav > ul > li > a {
+  position: relative; /*this fied the parent cutting of child "a" elements*/
 }
 
 .nav-bar {
-  margin: auto;
-  height: 35px;
+  margin: 0;
+  height: 100%;
   width: 100%;
   align-items: center;
   padding-left: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
-.nav-bar > li {
-  display: grid;
-  justify-content: center;
-}
-
-.nav-bar > li {
-  width: 100%;
-  list-style: none;
-}
-
+/*nav icons settings - needs fixing on height clipping*/
 .nav-bar > li > a {
   background-color: rgba(204, 255, 255, 0.829);
   padding: 15px;
@@ -181,9 +188,18 @@ ul {
   border-radius: 50%;
 }
 
+/*all images*/
 img {
   border-radius: 50%;
   width: 100%;
+}
+
+/*profile picture*/
+.grid-header > img {
+  position: relative;
+  left: 10px;
+  height: 465px;
+  width: 465px;
 }
 
 /*Main*/
@@ -198,12 +214,9 @@ img {
   padding: 5px;
 }
 
-li {
-  height: auto;
-}
-
 .hyperlink_text {
   background-color: grey;
+  width: 50px;
   color: white;
   text-decoration: none;
   padding: 1px;
@@ -213,6 +226,10 @@ li {
 .list_dot {
   list-style: none;
   padding: 0;
+}
+
+.icons {
+  justify-content: center;
 }
 
 p {
@@ -227,28 +244,15 @@ p {
 }
 
 .fade-box-cv {
-  display: grid;
-  grid-template-columns: 80px auto 80px;
-  grid-template-rows: 50px auto;
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.grid-cv {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.grid-cv-text {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
 }
 
 /*Footer*/
 
 footer {
-  grid-template-columns: auto 80px auto;
-  display: grid;
+  display: flex;
   justify-content: space-between;
   align-items: top;
   height: 100%;
