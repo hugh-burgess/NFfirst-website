@@ -48,7 +48,11 @@ h2 {
 /*Header*/
 
 header {
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
 }
 
 ul {
@@ -63,6 +67,8 @@ ul {
   width: 100%;
   align-items: center;
   padding-left: 0;
+  padding: 5px;
+  margin: 5px;
 }
 
 .nav-bar > li {
@@ -76,18 +82,30 @@ ul {
 }
 
 .nav-bar > li > a {
-  background-color: rgba(204, 255, 255, 0.829);
+  background-color: rgba(204, 255, 255, 1);
   padding: 15px;
   margin: 20px;
   border-radius: 50%;
 }
 
-img {
-  border-radius: 15px;
-  width: 100%;
+/*Main*/
+
+/*profile picture*/
+.grid-main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-/*Main*/
+img {
+  top: 10px;
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .contact_box {
   padding: 5px;
@@ -99,12 +117,17 @@ img {
   padding: 5px;
 }
 
+/*container for the icons positions*/
 li {
-  height: auto;
+  height: 100%;
+  width: 100%;
+  align-items: stretch;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .hyperlink_text {
-  background-color: grey;
   width: 50px;
   color: white;
   text-decoration: none;
@@ -119,35 +142,24 @@ li {
 
 .icons {
   justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 p {
   line-height: 1.5;
+  padding: 10px;
 }
 
 .fade-box {
   background: white;
   border-radius: 5px;
-  padding: 10px;
   text-align: center;
 }
 
 .fade-box-cv {
-  display: grid;
-  grid-template-columns: 80px auto 80px;
-  grid-template-rows: 50px auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.grid-cv {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.grid-cv-text {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  padding: 5px;
 }
 
 /*Footer*/
@@ -158,14 +170,28 @@ footer {
   justify-content: space-between;
   align-items: top;
   height: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 footer > a {
-  margin-top: 5px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 footer > p {
   bottom: 10px;
   margin: 0;
   margin-top: 5px;
+}
+
+@media only screen and (max-width: 770px) {
+  header,
+  img,
+  .grid-main,
+  footer {
+    width: 100%;
+  }
 }
