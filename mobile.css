@@ -178,6 +178,7 @@ nav > ul > li > a {
   flex-wrap: nowrap;
   height: auto;
   align-items: stretch;
+  width: 25%;
   justify-content: center;
   text-align: center;
   display: flex;
