@@ -202,7 +202,7 @@ img {
 .grid-main > img {
   position: absolute;
   left: 140px;
-  top: 10%;
+  top: 7%;
   z-index: -1;
   height: 400px;
   width: 400px;
@@ -292,5 +292,5 @@ footer > p {
 }
 
 .group {
-  margin-top: 10%;
+  margin-top: 12%;
 }

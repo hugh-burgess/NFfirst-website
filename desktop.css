@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background: linear-gradient(35deg, #ccffff, #ffcccc);
   background-size: cover;
   background-position: center;
@@ -10,6 +11,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 h1,
@@ -27,7 +29,6 @@ h2 {
 .layout-grid {
   display: grid;
   grid-template-columns: 80px auto 80px;
-  grid-template-rows: auto auto 50px;
 }
 
 .grid-header {
@@ -55,12 +56,6 @@ header {
   height: auto;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-}
-
 .nav-bar {
   margin: auto;
   height: 35px;
@@ -69,11 +64,6 @@ ul {
   padding-left: 0;
   padding: 5px;
   margin: 5px;
-}
-
-.nav-bar > li {
-  display: grid;
-  justify-content: center;
 }
 
 .nav-bar > li {
@@ -98,7 +88,7 @@ ul {
   width: 50%;
 }
 
-img {
+.profile-picture {
   top: 10px;
   border-radius: 15px;
   display: block;
@@ -113,26 +103,6 @@ img {
 }
 
 .contact_box > ul > li > a > img {
-  width: 150px;
-  padding: 5px;
-}
-
-/*container for the icons positions*/
-li {
-  height: 100%;
-  width: 100%;
-  align-items: stretch;
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.hyperlink_text {
-  width: 50px;
-  color: white;
-  text-decoration: none;
-  padding: 1px;
-  border-radius: 5px;
 }
 
 .list_dot {
@@ -143,8 +113,15 @@ li {
 .icons {
   justify-content: center;
   display: flex;
-  flex-direction: row;
   align-items: center;
+}
+
+/*icons sizing*/
+.icons > * {
+  flex-basis: calc(100% / 3);
+}
+.icons img {
+  width: 100%;
 }
 
 p {
@@ -187,11 +164,36 @@ footer > p {
   margin-top: 5px;
 }
 
-@media only screen and (max-width: 770px) {
-  header,
-  img,
-  .grid-main,
-  footer {
+/*iPad*/
+@media only screen and (min-width: 436px) and (max-width: 768px) {
+  .html {
+    background-repeat: no-repeat;
     width: 100%;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .nav-bar {
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  nav > ul {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    background-position: left top;
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
   }
 }
