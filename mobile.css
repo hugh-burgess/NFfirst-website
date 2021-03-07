@@ -177,7 +177,6 @@ nav > ul > li > a {
   margin: 0;
   flex-wrap: nowrap;
   height: auto;
-  width: 25%;
   align-items: stretch;
   justify-content: center;
   text-align: center;
@@ -311,3 +310,4 @@ footer > p {
   .nav-bar {
     width: 12%;
   }
+}
