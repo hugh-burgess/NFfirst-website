@@ -76,7 +76,7 @@ ul {
 }
 
 .nav-bar > li > a {
-  background-color: rgba(204, 255, 255, 0.829);
+  background-color: rgba(204, 255, 255, 1);
   padding: 15px;
   margin: 20px;
   border-radius: 50%;
@@ -99,12 +99,17 @@ img {
   padding: 5px;
 }
 
+/*container for the icons positions*/
 li {
-  height: auto;
+  height: 100%;
+  width: 100%;
+  align-items: stretch;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .hyperlink_text {
-  background-color: grey;
   width: 50px;
   color: white;
   text-decoration: none;
@@ -119,35 +124,24 @@ li {
 
 .icons {
   justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 p {
   line-height: 1.5;
+  padding: 10px;
 }
 
 .fade-box {
   background: white;
   border-radius: 5px;
-  padding: 10px;
   text-align: center;
 }
 
 .fade-box-cv {
-  display: grid;
-  grid-template-columns: 80px auto 80px;
-  grid-template-rows: 50px auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.grid-cv {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.grid-cv-text {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  padding: 5px;
 }
 
 /*Footer*/
@@ -161,7 +155,8 @@ footer {
 }
 
 footer > a {
-  margin-top: 5px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 footer > p {
