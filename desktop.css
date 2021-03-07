@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
+  justify-content: center;
 }
 
 html,
 body {
   background: linear-gradient(35deg, #ccffff, #ffcccc);
-  background-size: cover;
-  background-position: center;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
 }
 
 body {
@@ -20,8 +21,7 @@ h2 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-color: white;
   border-radius: 5px;
-  content: 10px;
-  padding: 5px;
+  text-align: center;
 }
 
 /*Grid*/
@@ -57,17 +57,16 @@ header {
 }
 
 .nav-bar {
-  margin: auto;
   height: 35px;
   width: 100%;
   align-items: center;
-  padding-left: 0;
   padding: 5px;
-  margin: 5px;
+  display: flex;
 }
 
-.nav-bar > li {
-  width: 100%;
+.nav-bar li {
+  width: 5vw;
+  height: 100%;
   list-style: none;
 }
 
@@ -99,7 +98,6 @@ header {
 
 .contact_box {
   padding: 5px;
-  text-align: center;
 }
 
 .contact_box > ul > li > a > img {
@@ -145,7 +143,6 @@ footer {
   grid-template-columns: auto 80px auto;
   display: grid;
   justify-content: space-between;
-  align-items: top;
   height: 100%;
 
   margin-left: auto;
@@ -162,38 +159,4 @@ footer > p {
   bottom: 10px;
   margin: 0;
   margin-top: 5px;
-}
-
-/*iPad*/
-@media only screen and (min-width: 436px) and (max-width: 768px) {
-  .html {
-    background-repeat: no-repeat;
-    width: 100%;
-  }
-
-  nav {
-    display: block;
-  }
-
-  .nav-bar {
-    justify-content: flex-start;
-    align-content: center;
-  }
-
-  nav > ul {
-    margin: 0;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  html {
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-
-    background-position: left top;
-    margin-top: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-  }
 }
