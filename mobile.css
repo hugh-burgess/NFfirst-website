@@ -161,12 +161,9 @@ header {
 
 nav {
   overflow-y: hidden;
-  display: inline;
 }
 
 nav > ul > li {
-  display: inline;
-  display: flex;
   align-items: center;
   margin: 10px;
 }
@@ -180,12 +177,12 @@ nav > ul > li > a {
   margin: 0;
   flex-wrap: nowrap;
   height: auto;
-  width: 100%;
+  width: 25%;
   align-items: stretch;
   justify-content: center;
   text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 /*nav icons settings - needs fixing on height clipping*/
@@ -203,12 +200,12 @@ img {
 
 /*profile picture*/
 .grid-main > img {
-  position: fixed;
-  left: 150px;
+  position: absolute;
+  left: 140px;
   top: 10%;
   z-index: -1;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
 }
 
 /*Main*/
@@ -292,4 +289,8 @@ footer > p {
   margin: 0;
   margin-top: 5px;
   overflow-y: hidden;
+}
+
+.group {
+  margin-top: 10%;
 }
