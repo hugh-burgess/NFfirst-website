@@ -204,8 +204,8 @@ img {
   left: 140px;
   top: 7%;
   z-index: -1;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
 }
 
 /*Main*/
@@ -312,4 +312,3 @@ footer > p {
     width: 12%;
   }
 
-  
