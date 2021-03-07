@@ -202,10 +202,10 @@ img {
 .grid-main > img {
   position: absolute;
   left: 140px;
-  top: 10%;
+  top: 7%;
   z-index: -1;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
 }
 
 /*Main*/
@@ -292,5 +292,23 @@ footer > p {
 }
 
 .group {
-  margin-top: 10%;
+  margin-top: 12%;
 }
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  /*profile picture*/
+
+  .grid-main > img {
+    position: absolute;
+    left: 270px;
+    top: 7%;
+    z-index: -1;
+    height: 400px;
+    width: 400px;
+  }
+
+  .nav-bar {
+    width: 12%;
+  }
+

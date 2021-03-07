@@ -1,15 +1,18 @@
 * {
   box-sizing: border-box;
+  justify-content: center;
 }
 
-html {
+html,
+body {
   background: linear-gradient(35deg, #ccffff, #ffcccc);
-  background-size: cover;
-  background-position: center;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 h1,
@@ -18,8 +21,7 @@ h2 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-color: white;
   border-radius: 5px;
-  content: 10px;
-  padding: 5px;
+  text-align: center;
 }
 
 /*Grid*/
@@ -27,7 +29,6 @@ h2 {
 .layout-grid {
   display: grid;
   grid-template-columns: 80px auto 80px;
-  grid-template-rows: auto auto 50px;
 }
 
 .grid-header {
@@ -55,29 +56,17 @@ header {
   height: auto;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-}
-
 .nav-bar {
-  margin: auto;
   height: 35px;
   width: 100%;
   align-items: center;
-  padding-left: 0;
   padding: 5px;
-  margin: 5px;
+  display: flex;
 }
 
-.nav-bar > li {
-  display: grid;
-  justify-content: center;
-}
-
-.nav-bar > li {
-  width: 100%;
+.nav-bar li {
+  width: 5vw;
+  height: 100%;
   list-style: none;
 }
 
@@ -98,7 +87,7 @@ ul {
   width: 50%;
 }
 
-img {
+.profile-picture {
   top: 10px;
   border-radius: 15px;
   display: block;
@@ -109,30 +98,9 @@ img {
 
 .contact_box {
   padding: 5px;
-  text-align: center;
 }
 
 .contact_box > ul > li > a > img {
-  width: 150px;
-  padding: 5px;
-}
-
-/*container for the icons positions*/
-li {
-  height: 100%;
-  width: 100%;
-  align-items: stretch;
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.hyperlink_text {
-  width: 50px;
-  color: white;
-  text-decoration: none;
-  padding: 1px;
-  border-radius: 5px;
 }
 
 .list_dot {
@@ -143,8 +111,15 @@ li {
 .icons {
   justify-content: center;
   display: flex;
-  flex-direction: row;
   align-items: center;
+}
+
+/*icons sizing*/
+.icons > * {
+  flex-basis: calc(100% / 3);
+}
+.icons img {
+  width: 100%;
 }
 
 p {
@@ -168,7 +143,6 @@ footer {
   grid-template-columns: auto 80px auto;
   display: grid;
   justify-content: space-between;
-  align-items: top;
   height: 100%;
 
   margin-left: auto;
@@ -185,13 +159,4 @@ footer > p {
   bottom: 10px;
   margin: 0;
   margin-top: 5px;
-}
-
-@media only screen and (max-width: 770px) {
-  header,
-  img,
-  .grid-main,
-  footer {
-    width: 100%;
-  }
 }
