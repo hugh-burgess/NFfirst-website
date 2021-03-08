@@ -178,7 +178,7 @@ nav > ul > li > a {
   flex-wrap: nowrap;
   height: auto;
   align-items: stretch;
-  width: 25%;
+  width: 100%;
   justify-content: center;
   text-align: center;
   display: flex;
@@ -224,6 +224,10 @@ img {
 
 /*Main*/
 
+.landscape-secret {
+  display: none;
+}
+
 .contact_box {
   padding: 5px;
 }
@@ -241,7 +245,6 @@ li {
   align-items: stretch;
   align-content: center;
   display: flex;
-  flex-direction: column;
 }
 
 .hyperlink_text {
@@ -328,7 +331,7 @@ footer > p {
 }
 
 /*Landscape Phone*/
-@media only screen and (min-device-height: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (max-device-height: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
   .image-wrapper {
     position: absolute;
     right: 0%;
@@ -355,7 +358,11 @@ footer > p {
   }
 
   .nav-bar {
-    width: 100%;
     flex-direction: column;
+  }
+
+  .landscape-secret {
+    display: block;
+    text-align: center;
   }
 }
