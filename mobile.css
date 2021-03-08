@@ -201,13 +201,16 @@ img {
 /*profile picture*/
 .image-wrapper {
   position: absolute;
-  left: 140px;
+  right: 0%;
   top: 7%;
   z-index: -1;
   height: 500px;
-  width: 500px;
+  width: 250px;
   object-fit: contain;
   overflow: hidden;
+  background-color: white;
+  border-bottom-left-radius: 500px;
+  border-top-left-radius: 500px;
 }
 
 .whole-image {
@@ -215,8 +218,7 @@ img {
 }
 
 .cropped-image {
-  width: 50%;
-
+  width: 100%;
   border-radius: 0%;
 }
 
@@ -322,5 +324,38 @@ footer > p {
 
   .nav-bar {
     width: 12%;
+  }
+}
+
+/*Landscape Phone*/
+@media only screen and (min-device-height: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+  .image-wrapper {
+    position: absolute;
+    right: 0%;
+    top: 7%;
+    z-index: -1;
+    height: 500px;
+    width: 250px;
+    object-fit: contain;
+    overflow: hidden;
+    background-color: white;
+    border-bottom-left-radius: 500px;
+    border-top-left-radius: 500px;
+  }
+
+  .cropped-image {
+    width: 100%;
+    border-radius: 0%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-bar {
+    width: 100%;
+    flex-direction: column;
   }
 }
