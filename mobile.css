@@ -157,6 +157,11 @@ h2 {
 
 header {
   overflow-y: hidden;
+  z-index: -2;
+}
+
+.h1_header {
+  z-index: -2;
 }
 
 nav {
@@ -202,7 +207,7 @@ img {
 .image-wrapper {
   position: absolute;
   right: 0%;
-  top: 7%;
+  top: 3%;
   z-index: -1;
   height: 500px;
   width: 250px;
