@@ -65,7 +65,6 @@ header {
 }
 
 .nav-bar li {
-  width: 5vw;
   height: 100%;
   list-style: none;
 }
@@ -88,12 +87,15 @@ header {
 }
 
 .profile-picture {
-  top: 10px;
   border-radius: 15px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 75%;
+}
+
+.cropped-image {
+  display: none;
 }
 
 .contact_box {
