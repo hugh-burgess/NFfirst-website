@@ -113,6 +113,10 @@ header {
   align-items: center;
 }
 
+.landscape-secret {
+  display: none;
+}
+
 /*icons sizing*/
 .icons > * {
   flex-basis: calc(100% / 3);
