@@ -369,5 +369,6 @@ footer > p {
   .landscape-secret {
     display: block;
     text-align: center;
+    z-index: 100;
   }
 }
