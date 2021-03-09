@@ -1,0 +1,22 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My personal website with Neue Fische.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugh-burgess/NFfirst-website.git"
+  },
+  "author": "Hugh Burgess",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugh-burgess/NFfirst-website/issues"
+  },
+  "homepage": "https://github.com/hugh-burgess/NFfirst-website#readme",
+  "devDependencies": {
+    "htmlhint": "^0.14.2"
+  }
+}
